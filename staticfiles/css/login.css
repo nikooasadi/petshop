@@ -1,0 +1,121 @@
+body{
+    margin:0 ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(rgb(255, 237, 221),rgb(255, 229, 195));
+}
+
+.login-box{
+    text-align: center;
+    width: 25%;
+    height: 70%;
+    padding: 3%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 4px 10px 15px 1px rgba(0,0,0,0.2);
+    border: 1px solid #ff9443d6;
+}
+
+.login-box img{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #ff9443d6;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.login-box input{
+    width:100%;
+    height:50px;
+    border:1px solid #ff9443d6;
+    border-radius:20px;
+    padding:5px;
+}
+
+.form input::placeholder{
+    font-weight: bolder;
+    color: rgba(0,0,0,0.564);
+    text-align: right;
+}
+
+.btn{
+    width: 80px;
+    height:40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff9443d6;
+    color: white;
+    font-size: 17px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff7f2b;
+}
+
+@font-face {
+    font-family: "Samim";
+    src: url("../fonts/Samim.woff2") format("woff2"),
+         url("../fonts/Samim.woff") format("woff"),
+         url("../fonts/Samim.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------------ */
+/* 📱 Media Queries فقط ریسپانسیو */
+/* ------------------------------ */
+
+/* موبایل */
+@media (max-width: 600px) {
+    .login-box {
+        width: 85%;
+        height: auto;
+        padding: 25px 8%;
+    }
+
+    .login-box img {
+        width: 110px;
+        margin-bottom: 15px;
+    }
+
+    .login-box input {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+        height: 45px;
+    }
+}
+
+/* تبلت */
+@media (min-width: 601px) and (max-width: 992px) {
+    .login-box {
+        width: 50%;
+        height: auto;
+        padding: 4%;
+    }
+
+    .login-box img {
+        width: 130px;
+    }
+
+    .btn {
+        width: 120px;
+    }
+}
